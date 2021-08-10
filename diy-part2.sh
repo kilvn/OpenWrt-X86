@@ -12,3 +12,8 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+
+#移除无用软件包
+rm -rf luci-theme-argon_new package/openwrt-packages
+rm -rf luci-app-passwall package/openwrt-packages
+rm -rf luci-theme-argon package/lean
