@@ -16,4 +16,5 @@
 #移除无用软件包
 rm -rf luci-theme-argon_new package/kenzo
 rm -rf luci-app-passwall package/kenzo
+rm -rf luci-app-vssr package/kenzo
 rm -rf luci-theme-argon package/lean
