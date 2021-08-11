@@ -77,7 +77,7 @@ jobs:
     - name: Check agin
       run: cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a
       
-     -name: Delate apk
+    -name: Remove apk
       run: cd openwrt && rm -rf /package/feeds/kenzo/luci-theme-argon_new && rm -rf /package/feeds/kenzo/luci-app-argon-config && rm -rf /package/feeds/kenzo/luci-app-passwall && rm -rf /package/feeds/kenzo/luci-app-vssr && rm -rf /package/lean/luci-theme-argon 
 
     - name: Load custom configuration
