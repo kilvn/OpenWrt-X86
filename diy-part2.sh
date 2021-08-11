@@ -18,3 +18,6 @@ rm -rf luci-theme-argon_new package/feeds/kenzo
 rm -rf luci-app-passwall package/feeds/kenzo
 rm -rf luci-app-vssr package/feeds//kenzo
 rm -rf luci-theme-argon package/lean
+
+#下载额外软件包
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
