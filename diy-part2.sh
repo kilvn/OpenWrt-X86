@@ -13,12 +13,6 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
-#下载额外软件包
-git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
-git clone https://github.com/kenzok8/openwrt-packages package/kenzo
-git clone bypass https://github.com/kiddin9/openwrt-bypass package/bypass
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-
 #移除无用软件包
 rm -rf luci-theme-argon_new package/kenzo
 rm -rf luci-app-passwall package/kenzo
