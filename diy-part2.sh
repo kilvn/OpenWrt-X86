@@ -13,5 +13,9 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
-#移除无用软件包
+#delate apk
 rm -rf luci-theme-argon_new package/feeds/kenzo&&rm -rf luci-app-argon-config&&rm -rf luci-app-passwall package/feeds/kenzo&&rm -rf luci-app-vssr package/feeds/kenzo&&rm -rf luci-theme-argon package/lean
+
+#download apk
+#下载额外软件包
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
