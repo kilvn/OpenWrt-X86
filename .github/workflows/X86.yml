@@ -78,7 +78,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a
       
     - name: Remove kit
-      run: cd openwrt && rm -rf /package/lean/luci-theme-argon && rm -rf /package/feeds/kenzo/luci-app-passwall && rm -rf /package/feeds/kenzo/luci-app-vssr $$ rm -rf /package/feeds/kenzo/luci-app-argon-config && rm -rf /package/feeds/kenzo/luci-theme-argon_new       
+      run: cd openwrt && rm -rf ~/package/lean/luci-theme-argon && rm -rf ~/package/feeds/kenzo/luci-app-passwall && rm -rf ~/package/feeds/kenzo/luci-app-vssr $$ rm -rf ~/package/feeds/kenzo/luci-app-argon-config && rm -rf ~/package/feeds/kenzo/luci-theme-argon_new       
       
     - name: Load custom configuration
       run: |
