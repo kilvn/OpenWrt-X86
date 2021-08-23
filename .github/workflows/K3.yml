@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: N3-auto-complie
+name: K3-auto-complie
 
 on:
   repository_dispatch:
