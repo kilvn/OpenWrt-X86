@@ -84,6 +84,7 @@ jobs:
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         [ -e $MAKEFILE_FILE ] && mv $MAKEFILE_FILE openwrt/target/linux/x86/Makefile
+        [ -e $INDEX_FILE ] && mv $INDEX_FILE openwrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
@@ -92,6 +93,7 @@ jobs:
         rm -rf package/feeds/kenzo/luci-app-vssr 
         rm -rf package/feeds/kenzo/luci-app-argon-config 
         rm -rf package/feeds/kenzo/luci-theme-argon_new
+        sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES += phicomm-k3|' target/linux/bcm53xx/image/Makefile
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
