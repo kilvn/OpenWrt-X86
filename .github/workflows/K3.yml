@@ -94,7 +94,6 @@ jobs:
         rm -rf package/feeds/kenzo/luci-app-argon-config 
         rm -rf package/feeds/kenzo/luci-theme-argon_new
         rm -rf package/lean/k3screenctrl
-        sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES += phicomm-k3|' target/linux/bcm53xx/image/Makefile
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
