@@ -24,7 +24,8 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: K3/.config
-  MAKEFILE_FILE: Makefile
+  MAKEFILE_FILE: K3/Makefile
+  INDEX_FILE: K3/index.htm
   DIY_P1_SH: K3/diy-part1.sh
   DIY_P2_SH: K3/diy-part2.sh
   UPLOAD_BIN_DIR: false
