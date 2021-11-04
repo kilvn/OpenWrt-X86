@@ -1,3 +1,4 @@
+
 # SPDX-License-Identifier: GPL-2.0-only
 #
 # Copyright (C) 2013 OpenWrt.org
@@ -12,6 +13,7 @@ CPU_TYPE:=cortex-a9
 SUBTARGETS:=generic
 
 KERNEL_PATCHVER:=5.10
+KERNEL_TESTING_PATCHVER:=5.10
 
 define Target/Description
 	Build firmware images for Broadcom based BCM47xx/53xx routers with ARM CPU, *not* MIPS.
