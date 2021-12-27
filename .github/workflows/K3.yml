@@ -69,7 +69,7 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-        git checkout 3a5b730796f39ecc866900b50956110369610b87
+        git checkout bfbc836afe2dbe025944dd965c1c0dff782ed521
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
