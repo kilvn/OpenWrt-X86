@@ -86,7 +86,7 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
-        rm -rf package/luci/luci-theme-argon
+        rm -rf package/feeds/luci/luci-theme-argon
  
     - name: Download package
       id: package
