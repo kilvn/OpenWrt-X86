@@ -21,6 +21,7 @@ echo '========special for K3!========'
 
 #download apk
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
 git clone https://github.com/xnxy2012/k3screenctrl_build.git package/k3screenctrl_build
 git clone https://github.com/lwz322/k3screenctrl.git package/k3screenctrl
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/luci-app-k3screenctrl
