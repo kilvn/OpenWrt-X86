@@ -25,6 +25,7 @@ git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge.git package/luci-t
 git clone https://github.com/xnxy2012/k3screenctrl_build.git package/k3screenctrl_build
 git clone https://github.com/lwz322/k3screenctrl.git package/k3screenctrl
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/luci-app-k3screenctrl
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
 #git clone https://github.com/tossp/k3screenctrl_sh.git package/k3screenctrl_sh
 #git clone https://github.com/Hill-98/luci-app-k3screenctrl.git package/luci-app-k3screenctrl
 #git clone https://github.com/Hill-98/openwrt-k3screenctrl.git package/openwrt-k3screenctrl
