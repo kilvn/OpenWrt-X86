@@ -26,6 +26,7 @@ git clone https://github.com/xnxy2012/k3screenctrl_build.git package/k3screenctr
 git clone https://github.com/lwz322/k3screenctrl.git package/k3screenctrl
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/luci-app-k3screenctrl
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
+git clone https://github.com/destan19/OpenAppFilter.git package/oneapp
 #git clone https://github.com/xiaorouji/openwrt-passwall.git
 #git clone https://github.com/tossp/k3screenctrl_sh.git package/k3screenctrl_sh
 #git clone https://github.com/Hill-98/luci-app-k3screenctrl.git package/luci-app-k3screenctrl
