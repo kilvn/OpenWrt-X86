@@ -87,6 +87,7 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
         rm -rf package/feeds/luci/luci-theme-argon
+        rm -rf package/feeds/packages/mosdns
  
     - name: Download package
       id: package
