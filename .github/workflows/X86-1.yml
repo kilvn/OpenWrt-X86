@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: X86-auto-complie
+name: X86-complie
 
 on:
   repository_dispatch:
@@ -23,8 +23,8 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
-  MAKEFILE_FILE: Makefile
+  CONFIG_FILE: X86/.config
+  MAKEFILE_FILE: X86/Makefile
   DIY_P1_SH: X86/diy-part1.sh
   DIY_P2_SH: X86/diy-part2.sh
   UPLOAD_BIN_DIR: false
