@@ -74,9 +74,6 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-      
-    - name: Check agin
-      run: cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a
        
     - name: Check coustem    
       run: |
@@ -88,6 +85,9 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
         rm -rf package/feeds/luci/luci-theme-argon
         rm -rf package/feeds/packages/mosdns
+        
+    - name: Check agin
+      run: cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -f
  
     - name: Download package
       id: package
