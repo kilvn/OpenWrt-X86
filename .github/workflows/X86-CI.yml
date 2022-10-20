@@ -55,7 +55,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        git clone https://github.com/coolsnowwolf/lede openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
@@ -79,11 +79,12 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
-        rm -rf package/feeds/luci/luci-theme-argon
-        rm -rf package/feeds/packages/mosdns
         
     - name: Check agin
-      run: cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -f
+      run: cd openwrt && ./scripts/feeds update -a
+      
+    - name: Install agin
+      run: cd openwrt && ./scripts/feeds install -f
  
     - name: Download package
       id: package
@@ -91,8 +92,8 @@ jobs:
         cd openwrt
         make defconfig
         make download -j8
-        find dl -size -1024c -exec ls -l {} \;
-        find dl -size -1024c -exec rm -f {} \;
+      #  find dl -size -1024c -exec ls -l {} \;
+      #  find dl -size -1024c -exec rm -f {} \;
 
     - name: Compile the firmware
       id: compile
