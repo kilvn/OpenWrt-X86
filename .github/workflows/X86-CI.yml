@@ -24,8 +24,6 @@ env:
   DIY_P2_SH: X86/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
@@ -92,8 +90,8 @@ jobs:
         cd openwrt
         make defconfig
         make download -j8
-      #  find dl -size -1024c -exec ls -l {} \;
-      #  find dl -size -1024c -exec rm -f {} \;
+        find dl -size -1024c -exec ls -l {} \;
+        find dl -size -1024c -exec rm -f {} \;
 
     - name: Compile the firmware
       id: compile
