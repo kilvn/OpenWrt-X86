@@ -6,7 +6,7 @@
 #
 # https://github.com/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
-#
+#        # [ -e $MAKEFILE_FILE ] && mv $MAKEFILE_FILE openwrt/target/linux/x86/Makefile
 
 name: K3-auto-complie
 
@@ -83,7 +83,6 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        [ -e $MAKEFILE_FILE ] && mv $MAKEFILE_FILE openwrt/target/linux/x86/Makefile
         [ -e $INDEX_FILE ] && mv $INDEX_FILE openwrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
         chmod +x $DIY_P2_SH
         cd openwrt
