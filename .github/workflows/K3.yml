@@ -88,8 +88,8 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
       
-    - name: remove tag
-      run: cd openwrt && rm -rf package/lean/k3screenctrl
+#    - name: remove tag
+#      run: cd openwrt && rm -rf package/lean/k3screenctrl
 
     - name: Download package
       id: package
