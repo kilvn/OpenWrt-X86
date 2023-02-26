@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: X86-CI
+name: X86-6.1
 
 on:
   repository_dispatch:
