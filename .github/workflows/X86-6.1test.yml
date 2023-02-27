@@ -53,9 +53,6 @@ jobs:
       env: 
         REPO_URL: https://github.com/coolsnowwolf/lede
         REPO_BRANCH: master
-        FEEDS_CONF: feeds.conf.default
-        CONFIG_FILE: X86/.config
-        MAKEFILE_FILE: X86/Makefile
         
       run: |
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
@@ -65,8 +62,7 @@ jobs:
         echo 'src-git openclash https://github.com/vernesong/OpenClash' >>feeds.conf.default
         rm -rf package/feeds/luci/luci-theme-argon
         rm -rf package/feeds/packages/mosdns
-     
-        
+            
     - name: Update & Install feeds
       working-directory: ./openwrt
       run: |
