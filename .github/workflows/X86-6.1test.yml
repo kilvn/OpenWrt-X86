@@ -85,7 +85,7 @@ jobs:
          
     - name: change makefile
       run: |
-        [ -e $MAKEFILE_FILE ] && mv $MAKEFILE_FILE openwrt/target/linux/x86/Makefile
+        sed -i 's/5.15/6.1/g' openwrt/target/linux/x86/Makefile 
         
     - name: Configuration Customization - Build_x86_64
       run: |
