@@ -63,6 +63,8 @@ jobs:
         echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
         echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
         echo 'src-git openclash https://github.com/vernesong/OpenClash' >>feeds.conf.default
+        rm -rf package/feeds/luci/luci-theme-argon
+        rm -rf package/feeds/packages/mosdns
      
         
     - name: Update & Install feeds
@@ -82,7 +84,7 @@ jobs:
          git clone https://github.com/QiuSimons/openwrt-mos package/mosdns
          
     - name:change makefile
-         run: |
+      run: |
         [ -e $MAKEFILE_FILE ] && mv $MAKEFILE_FILE openwrt/target/linux/x86/Makefile
         
     - name: Configuration Customization - Build_x86_64
@@ -97,6 +99,7 @@ jobs:
         make download -j$(nproc)
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
+        
     - name: Build firmware
       working-directory: ./openwrt
       run: |
