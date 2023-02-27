@@ -56,7 +56,7 @@ jobs:
         FEEDS_CONF: feeds.conf.default
         CONFIG_FILE: X86/.config
         MAKEFILE_FILE: X86/Makefile
-        DIY_P2_SH: X86/diy-part2.sh
+        
       run: |
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
