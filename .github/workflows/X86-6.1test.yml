@@ -84,8 +84,9 @@ jobs:
         sed -i 's/5.15/6.1/g' openwrt/target/linux/x86/Makefile 
         
     - name: Configuration Customization - Build_x86_64
+      env:
+        CONFIG_FILE: 'X86/.config'
       run: |
-        [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
         cd openwrt && make defconfig
