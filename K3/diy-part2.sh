@@ -19,8 +19,13 @@ sed -i '140,412d' target/linux/bcm53xx/image/Makefile
 cat target/linux/bcm53xx/image/Makefile |grep DEVICE_PACKAGES
 echo '========special for K3!========'
 
+echo '定制K3主机名'
+sed -i "s/hostname='OpenWrt'/hostname='Phicomm-K3'/g" package/base-files/files/bin/config_generate
+cat package/base-files/files/bin/config_generate |grep hostname=
+echo '=========Rewrite hostname done!========='
+
 #download apk
-git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
+#git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
 git clone https://github.com/destan19/OpenAppFilter.git package/oneapp
 git clone https://github.com/ningnao/k3screenctrl.git package/k3screenctrl
 git clone https://github.com/lwz322/k3screenctrl_build.git package/k3screenctrl_build
