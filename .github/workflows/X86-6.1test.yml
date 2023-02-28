@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: x86-6.1test
+name: x86-6.1-complie
 
 # Add a button to trigger the workflow
 on: 
