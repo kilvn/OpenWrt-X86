@@ -18,5 +18,5 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luc
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/lucia
 git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package/lucipb
 #git clone https://github.com/QiuSimons/openwrt-mos package/mosdns
-
