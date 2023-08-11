@@ -14,4 +14,5 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 #download apk       
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package/lucipb
