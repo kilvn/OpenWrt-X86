@@ -84,7 +84,7 @@ jobs:
 #      run: |
 #        sed -i 's/5.15/6.1/g' openwrt/target/linux/x86/Makefile 
         
-    - name: Configuration Customization - Build_x86_64
+    - name: Configuration Customization - Build_NewifiD2
       env:
         CONFIG_FILE: 'N3/.config'
       run: |
