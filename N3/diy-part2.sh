@@ -21,3 +21,4 @@ echo '=========Rewrite hostname done!========='
 #download apk       
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
 git clone https://github.com/xiaorouji/openwrt-passwall2.git package/lucipb
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
