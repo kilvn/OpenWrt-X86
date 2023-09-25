@@ -25,7 +25,7 @@ cat package/base-files/files/bin/config_generate |grep hostname=
 echo '=========Rewrite hostname done!========='
 
 #download apk
-git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/lucipc
 git clone https://github.com/destan19/OpenAppFilter.git package/oneapp
 git clone https://github.com/xnxy2012/k3screenctrl.git package/k3screenctrl
 git clone https://github.com/lwz322/k3screenctrl_build.git package/k3screenctrl_build
