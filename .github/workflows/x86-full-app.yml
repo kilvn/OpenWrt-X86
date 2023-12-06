@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: x86-6.1-complie
+name: x86-app-full-complie
 
 # Add a button to trigger the workflow
 on: 
