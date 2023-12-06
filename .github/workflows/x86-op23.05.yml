@@ -94,7 +94,7 @@ jobs:
       run: |
         ./scripts/feeds update -a
         
-    - name: Defconfig ${{matrix.target}}
+    - name: Defconfig 
       env:
         CONFIG_FILE: 'X86/X86-23.05/.config'
       run: |
@@ -145,7 +145,7 @@ jobs:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
 
-      - name : Upload artifact
+    - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
         name: OpenWrt-23.05
