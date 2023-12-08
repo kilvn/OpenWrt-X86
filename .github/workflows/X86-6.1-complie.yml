@@ -85,6 +85,7 @@ jobs:
       working-directory: ./openwrt
       run: |
          sed -i "s/%D %V, %C/openwrt $(date +'%m.%d') by xnxy2012/g" package/base-files/files/etc/banner
+         sed -i "s/hostname='OpenWrt'/hostname='Phicomm-K3'/g" package/base-files/files/bin/config_generate
 #        sed -i 's/5.15/6.1/g' openwrt/target/linux/x86/Makefile 
         
     - name: 重载配置文件
