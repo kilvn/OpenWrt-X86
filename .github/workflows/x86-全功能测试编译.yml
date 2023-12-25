@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: x86-app-full-complie
+name: x86-全功能测试编译
 
 # Add a button to trigger the workflow
 on: 
